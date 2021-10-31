@@ -1,14 +1,19 @@
 #include<stdio.h>
-#include<conio.h>
-int F(int n){
-	if(n == 1 || n == 2)
-	return 1;
-	return F(n-1)+F(n-2);
-}
 int main(){
 	int n;
 	printf("nhap n: ");
 	scanf("%d",&n);
-	printf(" so fibonaci thu %d = %d",n,F(n));
-	return 0;
+	if(n<=0){
+		printf("so can tim la 0");
+	}else if(n<=2){
+		printf("so can tim la 1");
+	}else{
+		int a=0,b=1,c=1;
+		for(int i=3;i<n;i++){
+			a=b;
+			b=c;
+			c=a+b;
+		}
+		printf(" so can tim la %d",c);
+	}
 }
