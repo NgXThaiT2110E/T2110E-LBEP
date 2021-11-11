@@ -1,3 +1,4 @@
+//bai1  Tìm so nguyên to tiep theo cua n
 bool KTSNT(int n){
 	if(n <2) return false;
 	if(n<4) return true;
@@ -14,7 +15,7 @@ int SNTTiepTheo(int n){
 }
 
 
-
+//bai2  Tinh tong các chu so cua 1 so nguyên n
 int TongCacChuSo(int n){
 	//if(n<0) n=-n;
 	int total = 0;
@@ -25,7 +26,7 @@ int TongCacChuSo(int n){
 }
 
 
-
+//bai3  Tính chu vi tam giác
 int ChuVi(int a,int b, int c){
 	if(a+b>c && a+c >b && b+c>a)
 		return a+b+c;
@@ -33,7 +34,7 @@ int ChuVi(int a,int b, int c){
 }
 
 
-
+//bai4   Tính dien tích tam giác
 double DienTich(int a,int b, int c){
 	int cv = ChuVi(a,b,c);
 	if(cv == 0) return 0;
@@ -42,7 +43,7 @@ double DienTich(int a,int b, int c){
 }
 
 
-
+//bai5  Tìm uoc chung lon nhat cua 2 so
 int UCLN(int a,int b){
 	for(int i=a;i>0;i--){
 		if(a%i==0 && b%i==0)
@@ -51,7 +52,7 @@ int UCLN(int a,int b){
 }
 
 
-
+//bai6   Tìm boi chung nho nhat cua 2 so
 int BCNN(int a,int b){
 	for(int i=a; true ;i++){
 		if(i%a==0&&i%b==0)
